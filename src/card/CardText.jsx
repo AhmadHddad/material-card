@@ -4,11 +4,11 @@ import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
 import cardTextStyle from "assets/jss/material-dashboard-pro-react/components/cardTextStyle.jsx";
+import { withStyles } from "@mui/styles";
 
 function CardText({ ...props }) {
   const { classes, className, children, color, ...rest } = props;
