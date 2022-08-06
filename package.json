@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,6 +9,12 @@
     "htable",
     "htable",
     "Mui",
+    "AhmadHddad",
+    "Hddad",
+    "H",
+    "material-card",
+    "card",
+    "material",
     "material ui",
     "material ui table",
     "Mui table",
@@ -22,8 +28,8 @@
   "engines": {
     "node": ">=10"
   },
-  "repository": "https://github.com/AhmadHddad/Material-HTable",
-  "bugs": "https://github.com/AhmadHddad/Material-HTable/issues",
+  "repository": "https://github.com/AhmadHddad/material-card",
+  "bugs": "https://github.com/AhmadHddad/material-card/issues",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -46,33 +52,26 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "material-htable",
+  "name": "material-card",
   "author": "AhmadHddad",
-  "module": "dist/material-htable.esm.js",
+  "module": "dist/material-card.esm.js",
   "size-limit": [
     {
-      "path": "dist/material-htable.cjs.production.min.js",
+      "path": "dist/material-card.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/material-htable.esm.js",
+      "path": "dist/material-card.esm.js",
       "limit": "10 KB"
     }
   ],
   "peerDependencies": {
-    "@emotion/react": ">=11",
-    "@emotion/styled": ">=11",
-    "@mui/icons-material": ">=5",
-    "@mui/material": ">=5",
     "@mui/styles": ">=5",
+    "classnames": ">=2",
     "react": ">=17"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.2",
     "@mui/styles": "^5.9.2",
     "@size-limit/preset-small-lib": "^8.0.0",
     "@storybook/addon-essentials": "^6.5.10",
@@ -92,6 +91,7 @@
     "size-limit": "^8.0.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
+    "classnames": "^2.3.1",
     "typescript": "^4.7.4"
   }
 }
