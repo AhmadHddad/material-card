@@ -1,15 +1,8 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+export { default as HCard, HCardProps } from "./hCard/HCard";
+export { default as HCardFooter, HCardFooterProps } from "./hCard/HCardFooter";
+export { default as HCardAvatar, HCardAvatarProps } from "./hCard/HCardAvatar";
+export { default as HCardBody, HCardBodyProps } from "./hCard/HCardBody";
+export { default as HCardText, HCardTextProps } from "./hCard/HCardText";
+export { default as HCardIcon, HCardIconProps } from "./hCard/HCardIcon";
+export * as hCardStyles from './hCard/const-card' 
 
-export interface Props extends HTMLAttributes<HTMLDivElement> {
-  /** custom content, defaults to 'the snozzberries taste like snozzberries' */
-  children?: ReactChild;
-}
-
-// Please do not use types off of a default export module or else Storybook Docs will suffer.
-// see: https://github.com/storybookjs/storybook/issues/9556
-/**
- * A custom Thing component. Neat!
- */
-export const Thing: FC<Props> = ({ children }) => {
-  return <div>{children || `the snozzberries taste like snozzberries`}</div>;
-};

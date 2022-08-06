@@ -1,0 +1,28 @@
+import { createStyles } from '@mui/styles';
+import {
+  grayColor,
+  roseCardHeader,
+  successCardHeader,
+  warningCardHeader,
+  dangerCardHeader,
+  infoCardHeader,
+  primaryCardHeader,
+} from './const-card';
+
+export default  createStyles({
+  cardText: {
+    float: 'none',
+    display: 'inline-block',
+    marginRight: '0',
+    borderRadius: '3px',
+    backgroundColor: grayColor[0],
+    padding: '15px',
+    marginTop: '-20px',
+  },
+  warningCardHeader,
+  successCardHeader,
+  dangerCardHeader,
+  infoCardHeader,
+  primaryCardHeader,
+  roseCardHeader,
+});
