@@ -10,7 +10,7 @@ import {
   blackColor,
   grayColor,
   hexToRgb,
-} from './const-card.js';
+} from './const-card';
 
 export default createStyles({
   card: {

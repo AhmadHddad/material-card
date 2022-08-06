@@ -9,7 +9,7 @@ import {
   whiteColor,
   blackColor,
   hexToRgb,
-} from './const-card.js';
+} from './const-card';
 
 export default createStyles({
   cardHeader: {

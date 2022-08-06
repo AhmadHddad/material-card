@@ -1,5 +1,5 @@
 import { createStyles } from '@mui/styles';
-import { whiteColor, hexToRgb } from './const-card.js';
+import { whiteColor, hexToRgb } from './const-card';
 
 export default createStyles({
   cardBody: {
