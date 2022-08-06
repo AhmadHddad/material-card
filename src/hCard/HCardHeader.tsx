@@ -24,7 +24,7 @@ export type HCardHeaderProps = {
   rest?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 }
 
-export function HCardHeader(props: HCardHeaderProps) {
+export default function HCardHeader(props: HCardHeaderProps) {
   const {
     className,
     children,
