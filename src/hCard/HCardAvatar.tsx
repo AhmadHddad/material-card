@@ -3,7 +3,10 @@ import classNames from 'classnames';
 import hCardAvatarStyle from './hCardAvatarStyle';
 import { makeStyles } from '@mui/styles';
 
-export type HCardAvatarProps = {
+export type HCardAvatarProps = React.DetailedHTMLProps<
+React.HTMLAttributes<HTMLDivElement>,
+HTMLDivElement
+> &  {
   children: any | JSX.Element;
   className?: string;
   plain?: boolean;
@@ -17,10 +20,6 @@ export type HCardAvatarProps = {
     >
   ) => JSX.Element;
   classes?: typeof hCardAvatarStyle;
-  rest?: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >;
 };
 
 export default function HCardAvatar(props: HCardAvatarProps) {

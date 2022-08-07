@@ -3,7 +3,10 @@ import classNames from 'classnames';
 import useHTableStyle from './hCardBodyStyle';
 import { makeStyles } from '@mui/styles';
 
-export type HCardBodyProps = {
+export type HCardBodyProps = React.DetailedHTMLProps<
+React.HTMLAttributes<HTMLDivElement>,
+HTMLDivElement
+> & {
   classes?: typeof useHTableStyle;
   className?: string;
   children: any | JSX.Element;
@@ -21,10 +24,6 @@ export type HCardBodyProps = {
       HTMLDivElement
     >
   ) => JSX.Element;
-  rest?: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >;
 };
 
 export default function HCardBody({ ...props }: HCardBodyProps) {

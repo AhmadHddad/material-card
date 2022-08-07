@@ -3,7 +3,10 @@ import classNames from 'classnames';
 import { makeStyles } from '@mui/styles';
 import hCardIconStyle from './hCardIconStyle';
 
-export type HCardIconProps = {
+export type HCardIconProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> & {
   classes?: typeof hCardIconStyle;
   className?: string;
   children: any | JSX.Element;
@@ -14,10 +17,6 @@ export type HCardIconProps = {
       HTMLDivElement
     >
   ) => JSX.Element;
-  rest?: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >;
 };
 
 export default function HCardIcon(props: HCardIconProps) {

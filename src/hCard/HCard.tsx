@@ -4,7 +4,7 @@ import useCardStyle from "./hCardStyle";
 import { makeStyles } from "@mui/styles";
 
 
-export type HCardProps = {
+export type HCardProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
   classes?: typeof useCardStyle,
   className?: string,
   children: any | JSX.Element,
@@ -26,7 +26,6 @@ export type HCardProps = {
   testimonial?: boolean,
   login?: boolean,
   component?: (props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => JSX.Element,
-  rest?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 }
 
 export default function HCard(props: HCardProps) {

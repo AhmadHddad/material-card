@@ -3,7 +3,10 @@ import classNames from 'classnames';
 import useCardFooterStyles from './hCardFooterStyle';
 import { makeStyles } from '@mui/styles';
 
-export type HCardFooterProps = {
+export type HCardFooterProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> & {
   classes?: typeof useCardFooterStyles;
   className?: string;
   children: any | JSX.Element;
@@ -20,10 +23,6 @@ export type HCardFooterProps = {
       HTMLDivElement
     >
   ) => JSX.Element;
-  rest?: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >;
 };
 
 export default function HCardFooter(props: HCardFooterProps) {

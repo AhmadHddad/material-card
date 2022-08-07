@@ -3,7 +3,10 @@ import classNames from 'classnames';
 import { makeStyles } from '@mui/styles';
 import hCardStyle from './hCardStyle';
 
-export type HCardTextProps = {
+export type HCardTextProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> & {
   classes?: typeof hCardStyle;
   className?: string;
   children: any | JSX.Element;
@@ -14,10 +17,6 @@ export type HCardTextProps = {
       HTMLDivElement
     >
   ) => JSX.Element;
-  rest?: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >;
 };
 
 export default function HCardText(props: HCardTextProps) {
